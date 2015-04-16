@@ -1,27 +1,27 @@
-package com.porch.peerprogram;
+package com.porch.pairprogram;
 
-import com.porch.peerprogram.resources.HoneyDoListResource;
+import com.porch.pairprogram.resources.HoneyDoListResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
-public class PeerProgramApplication extends Application<PeerProgramConfiguration> {
+public class PairProgramApplication extends Application<PairProgramConfiguration> {
     public static void main(String[] args) throws Exception {
-        new PeerProgramApplication().run(args);
+        new PairProgramApplication().run(args);
     }
 
     @Override
     public String getName() {
-        return "porch-peer-programming";
+        return "porch-pair-programming";
     }
 
     @Override
-    public void initialize(Bootstrap<PeerProgramConfiguration> bootstrap) {
+    public void initialize(Bootstrap<PairProgramConfiguration> bootstrap) {
         // nothing to do yet
     }
 
     @Override
-    public void run(PeerProgramConfiguration configuration,
+    public void run(PairProgramConfiguration configuration,
                     Environment environment) {
 
         final HoneyDoListResource honeyDoResource = new HoneyDoListResource();

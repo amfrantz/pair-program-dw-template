@@ -1,4 +1,4 @@
-package com.porch.peerprogram.resources;
+package com.porch.pairprogram.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
